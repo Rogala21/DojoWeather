@@ -1,0 +1,131 @@
+* {
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    margin: 0px;
+    padding: 5px;
+}
+
+h5 {
+    margin: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #9fc4f8;
+    color: white;
+    margin: 0px 0px 10px 0px;
+}
+
+.dojoWeather {
+    /* width: 50%; */
+    align-self: center;
+}
+
+.city-list {
+    width: 25%;
+}
+
+li {
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.city-list ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.city-list ul li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+#current-location {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+    width: 75%;
+    align-items: center;
+    border-bottom: 3px dotted black;
+}
+
+#week {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto;
+    width: 75%;
+}
+
+.day {
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 10000px; */
+}
+
+.temp {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.high {
+    color: red;
+    margin: 0px;
+}
+
+.low {
+    color: blue;
+    margin: 0px;
+}
+
+.° {
+    display: flex;
+}
+
+#cookie-time {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    border: 3px solid blue;
+    margin: 0px 25%;
+    position: fixed;
+    bottom: 0;
+}
+
+#cookie-time img {
+    height: 64px;
+    width: 64px;
+    margin: auto 0px;
+}
+
+#cookie-time button {
+    height: 35px;
+    margin: auto 0px;
+    background-color: lightblue;
+    padding: 5px;
+}
+
+.cookie-words {
+    width: 75%;
+}

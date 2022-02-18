@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Style.css">
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
     <title>Dojo Weather</title>
 </head>
 <body>
@@ -13,11 +13,66 @@
         <div class="dojoWeather"><h1>Dojo Weather</h1></div>
         <div class="city-list">
             <ul>
-                <li>Burbank</li>
-                <li>Chicago</li>
-                <li>Dallas</li>
+                <li onclick="burbank()"><h2>Burbank</h2></li>
+                <li onclick="chicago()"><h2>Chicago</h2></li>
+                <li onclick="dallas()"><h2>Dallas</h2></li>
             </ul>
         </div>
     </nav>
+    <div id="current-location">
+        <h2 class="location-selected">San Jose</h2>
+        <h3 class="temperature-type">Show Temperature in 
+            <select name="temerature" onchange="degrees(this)">
+                <option value="C">°C</option>
+                <option value="F">°F</option>
+        </select>
+    </h3>
+    </div>
+    <div id="week">
+        <div class="day">
+            <h3>Today</h3>
+            <img src="./assets/some_rain.png" alt="Rain Cloud">
+            <h4>Some Rain</h4>
+            <div class="temp">
+                <div class="°"><h3 class="high">24</h3>°</div>
+                <div class="°"><h3 class="low">18</h3>°</div>
+            </div>
+        </div>
+        <div class="day">
+            <h3>Tomorrow</h3>
+            <img src="./assets/some_sun.png" alt="Sun">
+            <h4>Sun</h4>
+            <div class="temp">
+                <div class="°"><h3 class="high">27</h3>°</div>
+                <div class="°"><h3 class="low">19</h3>°</div>
+            </div>
+        </div>
+        <div class="day">
+            <h3>Friday</h3>
+            <img src="./assets/some_clouds.png" alt="Rain Cloud">
+            <h4>Some Clouds</h4>
+            <div class="temp">
+                <div class="°"><h3 class="high">21</h3>°</div>
+                <div class="°"><h3 class="low">16</h3>°</div>
+            </div>
+        </div>
+        <div class="day">
+            <h3>Saturday</h3>
+            <img src="./assets/some_sun.png" alt="Rain Cloud">
+            <h4>Sun</h4>
+            <div class="temp">
+                <div class="°"><h3 class="high">26</h3>°</div>
+                <div class="°"><h3 class="low">21</h3>°</div>
+            </div>
+        </div>
+    </div>
+    <footer id="cookie-time">
+        <img src="./assets/cookie.png" alt="Its a cookie">
+        <div class="cookie-words">
+            <h5>Stop! Cookie time</h5>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffice. <a href="">Read more...</a> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem nihil, exercitationem cumque eligendi dolore praesentium vero repellat minima eaque placeat non aut maxime quo nostrum atque unde pariatur illo enim.
+        </div>
+        <button onclick="accept(this)">I Accept</button>
+    </footer>
 </body>
 </html>
