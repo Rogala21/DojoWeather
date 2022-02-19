@@ -48,6 +48,11 @@ li {
     cursor: pointer;
 }
 
+.city-list-sanJose {
+    color: transparent;
+    border: 3px solid transparent;
+}
+
 .city-list ul {
     display: flex;
     justify-content: space-evenly;

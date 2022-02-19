@@ -13,16 +13,17 @@
         <div class="dojoWeather"><h1>Dojo Weather</h1></div>
         <div class="city-list">
             <ul>
-                <li onclick="burbank()"><h2>Burbank</h2></li>
-                <li onclick="chicago()"><h2>Chicago</h2></li>
-                <li onclick="dallas()"><h2>Dallas</h2></li>
+                <li class="city-list-burbank" onclick="burbank(this)"><h2>Burbank</h2></li>
+                <li class="city-list-chicago" onclick="chicago(this)"><h2>Chicago</h2></li>
+                <li class="city-list-dallas" onclick="dallas(this)"><h2>Dallas</h2></li>
+                <li class="city-list-sanJose" onclick="sanJose(this)"><h2>San Jose</h2></li>
             </ul>
         </div>
     </nav>
     <div id="current-location">
         <h2 class="location-selected">San Jose</h2>
         <h3 class="temperature-type">Show Temperature in 
-            <select name="temerature" onchange="degrees(this)">
+            <select class="currentTemp" name="temerature" onchange="degrees(this)">
                 <option value="C">°C</option>
                 <option value="F">°F</option>
         </select>
